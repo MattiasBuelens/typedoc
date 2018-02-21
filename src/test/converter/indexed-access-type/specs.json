@@ -1,0 +1,373 @@
+{
+  "id": 0,
+  "name": "typedoc",
+  "kind": 0,
+  "flags": {},
+  "children": [
+    {
+      "id": 1,
+      "name": "\"indexed-access-type\"",
+      "kind": 1,
+      "kindString": "External module",
+      "flags": {
+        "isExported": true
+      },
+      "originalName": "%BASE%/indexed-access-type/indexed-access-type.ts",
+      "children": [
+        {
+          "id": 2,
+          "name": "ClickEvent",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {
+            "isExported": true
+          },
+          "children": [
+            {
+              "id": 3,
+              "name": "type",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isExported": true
+              },
+              "sources": [
+                {
+                  "fileName": "indexed-access-type.ts",
+                  "line": 2,
+                  "character": 8
+                }
+              ],
+              "type": {
+                "type": "stringLiteral",
+                "value": "click"
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [
+                3
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "indexed-access-type.ts",
+              "line": 1,
+              "character": 27
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "name": "EventMap",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {
+            "isExported": true
+          },
+          "children": [
+            {
+              "id": 5,
+              "name": "click",
+              "kind": 1024,
+              "kindString": "Property",
+              "flags": {
+                "isExported": true
+              },
+              "sources": [
+                {
+                  "fileName": "indexed-access-type.ts",
+                  "line": 8,
+                  "character": 11
+                }
+              ],
+              "type": {
+                "type": "reference",
+                "name": "ClickEvent",
+                "id": 2
+              }
+            }
+          ],
+          "groups": [
+            {
+              "title": "Properties",
+              "kind": 1024,
+              "children": [
+                5
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "indexed-access-type.ts",
+              "line": 7,
+              "character": 25
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "name": "EventTarget",
+          "kind": 256,
+          "kindString": "Interface",
+          "flags": {
+            "isExported": true
+          },
+          "children": [
+            {
+              "id": 7,
+              "name": "addEventListener",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 8,
+                  "name": "addEventListener",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "typeParameter": [
+                    {
+                      "id": 9,
+                      "name": "K",
+                      "kind": 131072,
+                      "kindString": "Type parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "typeOperator",
+                        "operator": "keyof",
+                        "target": {
+                          "type": "reference",
+                          "name": "EventMap"
+                        }
+                      }
+                    }
+                  ],
+                  "parameters": [
+                    {
+                      "id": 10,
+                      "name": "type",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "typeParameter",
+                        "name": "K",
+                        "constraint": {
+                          "type": "typeOperator",
+                          "operator": "keyof",
+                          "target": {
+                            "type": "reference",
+                            "name": "EventMap"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "id": 11,
+                      "name": "listener",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "reflection",
+                        "declaration": {
+                          "id": 12,
+                          "name": "__type",
+                          "kind": 65536,
+                          "kindString": "Type literal",
+                          "flags": {},
+                          "signatures": [
+                            {
+                              "id": 13,
+                              "name": "__call",
+                              "kind": 4096,
+                              "kindString": "Call signature",
+                              "flags": {},
+                              "parameters": [
+                                {
+                                  "id": 14,
+                                  "name": "ev",
+                                  "kind": 32768,
+                                  "kindString": "Parameter",
+                                  "flags": {},
+                                  "type": {
+                                    "type": "unknown",
+                                    "name": "EventMap[K]"
+                                  }
+                                }
+                              ],
+                              "type": {
+                                "type": "intrinsic",
+                                "name": "void"
+                              }
+                            }
+                          ],
+                          "sources": [
+                            {
+                              "fileName": "indexed-access-type.ts",
+                              "line": 12,
+                              "character": 65
+                            }
+                          ]
+                        }
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "indexed-access-type.ts",
+                  "line": 12,
+                  "character": 20
+                }
+              ]
+            },
+            {
+              "id": 15,
+              "name": "dispatchEvent",
+              "kind": 2048,
+              "kindString": "Method",
+              "flags": {
+                "isExported": true
+              },
+              "signatures": [
+                {
+                  "id": 16,
+                  "name": "dispatchEvent",
+                  "kind": 4096,
+                  "kindString": "Call signature",
+                  "flags": {},
+                  "typeParameter": [
+                    {
+                      "id": 17,
+                      "name": "K",
+                      "kind": 131072,
+                      "kindString": "Type parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "typeOperator",
+                        "operator": "keyof",
+                        "target": {
+                          "type": "reference",
+                          "name": "EventMap"
+                        }
+                      }
+                    }
+                  ],
+                  "parameters": [
+                    {
+                      "id": 18,
+                      "name": "ev",
+                      "kind": 32768,
+                      "kindString": "Parameter",
+                      "flags": {},
+                      "type": {
+                        "type": "unknown",
+                        "name": "EventMap[K]"
+                      }
+                    }
+                  ],
+                  "type": {
+                    "type": "intrinsic",
+                    "name": "void"
+                  }
+                }
+              ],
+              "sources": [
+                {
+                  "fileName": "indexed-access-type.ts",
+                  "line": 13,
+                  "character": 17
+                }
+              ]
+            }
+          ],
+          "groups": [
+            {
+              "title": "Methods",
+              "kind": 2048,
+              "children": [
+                7,
+                15
+              ]
+            }
+          ],
+          "sources": [
+            {
+              "fileName": "indexed-access-type.ts",
+              "line": 11,
+              "character": 28
+            }
+          ]
+        },
+        {
+          "id": 19,
+          "name": "ClickEventType",
+          "kind": 4194304,
+          "kindString": "Type alias",
+          "flags": {
+            "isExported": true
+          },
+          "sources": [
+            {
+              "fileName": "indexed-access-type.ts",
+              "line": 5,
+              "character": 26
+            }
+          ],
+          "type": {
+            "type": "stringLiteral",
+            "value": "click"
+          }
+        }
+      ],
+      "groups": [
+        {
+          "title": "Interfaces",
+          "kind": 256,
+          "children": [
+            2,
+            4,
+            6
+          ]
+        },
+        {
+          "title": "Type aliases",
+          "kind": 4194304,
+          "children": [
+            19
+          ]
+        }
+      ],
+      "sources": [
+        {
+          "fileName": "indexed-access-type.ts",
+          "line": 1,
+          "character": 0
+        }
+      ]
+    }
+  ],
+  "groups": [
+    {
+      "title": "External modules",
+      "kind": 1,
+      "children": [
+        1
+      ]
+    }
+  ]
+}
