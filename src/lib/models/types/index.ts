@@ -1,5 +1,6 @@
 export { Type } from './abstract';
 export { ArrayType } from './array';
+export { IndexedAccessType } from './indexed-access';
 export { IntrinsicType } from './intrinsic';
 export { IntersectionType } from './intersection';
 export { ReferenceType } from './reference';

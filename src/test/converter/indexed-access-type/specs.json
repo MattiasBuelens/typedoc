@@ -199,8 +199,23 @@
                                   "kindString": "Parameter",
                                   "flags": {},
                                   "type": {
-                                    "type": "unknown",
-                                    "name": "EventMap[K]"
+                                    "type": "indexedAccess",
+                                    "objectType": {
+                                      "type": "reference",
+                                      "name": "EventMap"
+                                    },
+                                    "indexType": {
+                                      "type": "typeParameter",
+                                      "name": "K",
+                                      "constraint": {
+                                        "type": "typeOperator",
+                                        "operator": "keyof",
+                                        "target": {
+                                          "type": "reference",
+                                          "name": "EventMap"
+                                        }
+                                      }
+                                    }
                                   }
                                 }
                               ],
@@ -275,8 +290,23 @@
                       "kindString": "Parameter",
                       "flags": {},
                       "type": {
-                        "type": "unknown",
-                        "name": "EventMap[K]"
+                        "type": "indexedAccess",
+                        "objectType": {
+                          "type": "reference",
+                          "name": "EventMap"
+                        },
+                        "indexType": {
+                          "type": "typeParameter",
+                          "name": "K",
+                          "constraint": {
+                            "type": "typeOperator",
+                            "operator": "keyof",
+                            "target": {
+                              "type": "reference",
+                              "name": "EventMap"
+                            }
+                          }
+                        }
                       }
                     }
                   ],
@@ -329,8 +359,15 @@
             }
           ],
           "type": {
-            "type": "stringLiteral",
-            "value": "click"
+            "type": "indexedAccess",
+            "objectType": {
+              "type": "reference",
+              "name": "ClickEvent"
+            },
+            "indexType": {
+              "type": "stringLiteral",
+              "value": "type"
+            }
           }
         }
       ],

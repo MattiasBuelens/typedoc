@@ -3,6 +3,7 @@ export { ArrayConverter } from './array';
 export { BindingArrayConverter } from './binding-array';
 export { BindingObjectConverter } from './binding-object';
 export { EnumConverter } from './enum';
+export { IndexedAccessConverter } from './indexed-access';
 export { IntrinsicConverter } from './intrinsic';
 export { StringLiteralConverter } from './string-literal';
 export { ReferenceConverter } from './reference';
