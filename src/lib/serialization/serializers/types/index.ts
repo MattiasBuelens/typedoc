@@ -1,5 +1,6 @@
 export * from './abstract';
 export * from './array';
+export * from './indexed-access';
 export * from './intersection-union';
 export * from './intrinsic';
 export * from './reference';
