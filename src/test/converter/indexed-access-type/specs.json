@@ -202,7 +202,8 @@
                                     "type": "indexedAccess",
                                     "objectType": {
                                       "type": "reference",
-                                      "name": "EventMap"
+                                      "name": "EventMap",
+                                      "id": 4
                                     },
                                     "indexType": {
                                       "type": "typeParameter",
@@ -293,7 +294,8 @@
                         "type": "indexedAccess",
                         "objectType": {
                           "type": "reference",
-                          "name": "EventMap"
+                          "name": "EventMap",
+                          "id": 4
                         },
                         "indexType": {
                           "type": "typeParameter",
@@ -362,7 +364,8 @@
             "type": "indexedAccess",
             "objectType": {
               "type": "reference",
-              "name": "ClickEvent"
+              "name": "ClickEvent",
+              "id": 2
             },
             "indexType": {
               "type": "stringLiteral",
